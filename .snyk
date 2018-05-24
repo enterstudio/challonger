@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - svg-to-png > imagemin > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-05-24T02:52:41.498Z'
+    - svg-to-png > imagemin > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-05-24T02:52:41.498Z'
+    - svg-to-png > imagemin > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-05-24T02:52:41.498Z'
+    - svg-to-png > imagemin > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-05-24T02:52:41.498Z'
+  'npm:request:20160119':
+    - svg-to-png > phantomjs > request:
+        patched: '2018-05-24T02:52:41.498Z'
+  'npm:tough-cookie:20170905':
+    - svg-to-png > phantomjs > request > tough-cookie:
+        patched: '2018-05-24T02:52:41.498Z'
