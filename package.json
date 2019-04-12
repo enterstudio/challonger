@@ -6,7 +6,9 @@
   "scripts": {
     "start": "heroku local",
     "prod": "NODE_ENV=production node index.js",
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,14 +27,15 @@
   },
   "homepage": "https://github.com/nmynarcik/challonger",
   "dependencies": {
-    "botkit": "0.0.15",
+    "botkit": "0.5.5",
     "challonge": "^1.0.1",
     "express": "^4.13.4",
     "form-data": "^1.0.0-rc4",
-    "newrelic": "^1.34.0",
+    "newrelic": "^4.0.0",
     "pn": "^1.0.0",
     "request": "^2.70.0",
-    "svg-to-png": "^2.0.1"
+    "svg-to-png": "^3.1.0",
+    "snyk": "^1.150.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -44,5 +47,6 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "jshint": "^2.9.1"
-  }
+  },
+  "snyk": true
 }
