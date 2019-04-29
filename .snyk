@@ -1,0 +1,48 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - svg-to-png > phantomjs > request > hawk > hoek:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > phantomjs > request > hawk > sntp > hoek:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > phantomjs > request > hawk > boom > hoek:
+        patched: '2019-04-29T01:40:18.504Z'
+  'npm:minimatch:20160620':
+    - svg-to-png > imagemin > vinyl-fs > glob-stream > minimatch:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2019-04-29T01:40:18.504Z'
+  'npm:request:20160119':
+    - svg-to-png > phantomjs > request:
+        patched: '2019-04-29T01:40:18.504Z'
+  'npm:tough-cookie:20170905':
+    - svg-to-png > phantomjs > request > tough-cookie:
+        patched: '2019-04-29T01:40:18.504Z'
+  'npm:tunnel-agent:20170305':
+    - svg-to-png > phantomjs > request > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-gifsicle > gifsicle > bin-build > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-jpegtran > jpegtran-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-optipng > optipng-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-pngquant > pngquant-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-gifsicle > gifsicle > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-jpegtran > jpegtran-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-optipng > optipng-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
+    - svg-to-png > imagemin > imagemin-pngquant > pngquant-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-04-29T01:40:18.504Z'
